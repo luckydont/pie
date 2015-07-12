@@ -1,6 +1,81 @@
+* {
+    font-size: 14px;
+}
+
 /*************** MENU ******************/
 
 /*************** PICTURE ***************/
 .tasty-pie {
     height: 400px;
+}
+/************** LOGIN FORM *************/
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 700px;
+    }
+}
+.modal-header {
+    background: #5478cc;
+    color: #fff;
+}
+.modal-header .close {
+    opacity: 1;
+}
+.modal-header .close span {
+    color: #fff;
+    font-size: 1.4em;
+}
+.modal-body {
+   /* padding: 0;*/
+}
+.modal-body .form-container {
+    padding: 20px;
+}
+.modal-body .form-container:last-of-type {
+    border-left: 1px solid rgba(61, 68, 68, 0.54);
+}
+.modal-body form input {
+    width: 100%;
+}
+.modal-body form input:first-of-type {
+    margin-top: 20px;
+}
+#phase-status {
+    margin: 0;
+}
+#phase-switcher {
+    color: #337AB7;
+    cursor: pointer;
+}
+#phase-switcher:hover {
+    text-decoration: underline;
+}
+
+#form-email-msg-box, #form-password-msg-box {
+    height: 45px;
+}
+.error-box {
+    font-size: 1em;
+    color: #ff4d2d;
+    transition: .3s;
+}
+
+.error-box:last-of-type {
+
+}
+
+.msg-box {
+
+    font-size: 1em;
+    color: white;
+    transition: .3s;
+    margin-left: 5px;
+}
+
+.msg-box:last-of-type {
+
+}
+input.error {
+    color: #DD6262);
+    border-color: #DD6262;
 }
