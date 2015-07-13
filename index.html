@@ -11,25 +11,28 @@
 
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <nav>
+<nav class="main-page-nav">
+    <div class="container">
+        <div class="row">
             <div class="col-sm-4 pull-left">Logo</div>
             <div class="col-sm-4 pull-right">
                 <div class="pull-right main-menu-login">
-                    <button class="btn" data-toggle="modal" data-target="#myModal">Log In</button>
+                    <button class="btn" data-toggle="modal" data-target="#myModal"><span>Log In</span></button>
                 </div>
                 <div class="pull-right main-menu-faq">
                     <button class="btn"><a href="">FAQ</a></button>
                 </div>
             </div>
-        </nav>
+
+        </div>
     </div>
+</nav>
+<div class="container">
     <div class="row">
         <div class="tasty-pie"></div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 pros-cons-block">
             <h3>For Business Owners</h3>
             <ol>
                 <li>Describe your special offer</li>
@@ -37,7 +40,7 @@
                 <li>Share the profits you get from new customers</li>
             </ol>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 pros-cons-block">
             <h3>For Anyone</h3>
             <ol>
                 <li>Become an Agent for your favorite Businesses</li>
@@ -66,12 +69,15 @@
                         </div>
                         <div class="col-sm-6 form-container">
                             <div class="row" id="phase-status" name="sign-up">
-                                <span class="form-question" >Don't have an account? </span><span id="phase-switcher">Sign Up</span>
+                                <span class="form-question">Don't have an account? </span><span id="phase-switcher">Sign Up</span>
 
                                 <form>
                                     <input id="form-email" class="form-control" type="email" placeholder="e-mail"/>
+
                                     <div class="msg-box" id="form-email-msg-box"></div>
-                                    <input id="form-password" class="form-control" type="password" placeholder="password"/>
+                                    <input id="form-password" class="form-control" type="password"
+                                           placeholder="password"/>
+
                                     <div class="msg-box" id="form-password-msg-box"></div>
                                     <a href="">Forgot password?</a>
                                     <button id="login-button" class="btn-primary btn-lg btn pull-right">Login</button>
