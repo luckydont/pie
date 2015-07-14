@@ -264,7 +264,7 @@ ul.nav li.dropdown span.dd-span {
 }
 .campaign-thumbnail .glyphicon {
     font-size: 1.6em;
-    margin-left: 1px;
+    margin-right: 15px;
 }
 .campaign-thumbnail .special {
     color: rgba(0, 0, 0, 0.71);
