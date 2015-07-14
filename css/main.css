@@ -37,13 +37,16 @@ nav button:hover a, nav button:hover span {
     border-bottom-color: transparent;
     color: #fff;
 }
-nav button:hover, nav button:hover a {
+nav button:hover {
 
     background-color: #3DBFD9;
 
 }
 nav .main-menu-login, nav .main-menu-faq {
     width: 80px;
+}
+nav img {
+    height: 42px;
 }
 /*************** PICTURE ***************/
 .tasty-pie {
@@ -124,7 +127,11 @@ nav .main-menu-login, nav .main-menu-faq {
 
     font-size: 1em;
     color: white;
-    transition: .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
     margin-left: 5px;
 }
 
@@ -137,13 +144,16 @@ input.error {
 }
 /***********CAMPAIGN-PAGE*****************/
 
+.campaign-page-title {
+    margin-bottom: 50px;
+}
 /*****************MENU********************/
 
 nav.campaign-page-nav .row {
     padding: 20px 75px;
 }
 nav ul.nav li a {
-    padding: 0;
+    padding: 1px;
 }
 nav ul.nav li a button span {
     font-size: 1.4em;
@@ -160,4 +170,117 @@ ul.nav ul.dropdown-menu li a{
 }
 ul.nav li.dropdown span.dd-span {
     border-bottom: 1px solid #3DBFD9;
+}
+/*****************THUMBNAILS*********************/
+.campaign-create-button {
+    position: relative;
+    border: 3px solid #333;
+    padding: 3px;
+    text-align: center;
+
+}
+
+.campaign-create-button a {
+    position: absolute;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+}
+.campaign-create-button:hover {
+}
+.campaign-create-button:hover div {
+    height: 97%;
+    padding-top: 36%;
+}
+
+.campaign-create-button div {
+    position: absolute;
+    background: #333;
+    font-weight: 600;
+    font-size: 1.4em;
+    bottom: 3px;
+    width: 97%;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    height: 40px;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition:    all .5s ease-out;
+    -ms-transition:     all .5s ease-out;
+    -o-transition:      all .5s ease-out;
+    transition:         all .5s ease-out;
+
+}
+.campaign-create-button i.glyphicon {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    font-size: 2em;
+    color: #47D454;
+}
+.campaign-thumbnail {
+    font-weight: 600;
+    box-shadow: 0 0 27px -7px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.campaign-thumbnail > div {
+    margin: 12px 5px;
+}
+.campaign-thumbnail > a.thumbnail-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    color: transparent;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 30%;
+}
+
+.campaign-thumbnail > a.thumbnail-link:hover {
+    color: #fff;
+    background: rgba(61, 191, 217, 0.60);
+}
+.campaign-thumbnail .title {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.campaign-thumbnail .title .logo{
+    background: url("../images/pie-chart-3-64x64.png") no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 30px;
+    float: left;
+    margin-left: 2px;
+}
+.campaign-thumbnail .glyphicon {
+    font-size: 1.6em;
+    margin-left: 1px;
+}
+.campaign-thumbnail .special {
+    color: rgba(0, 0, 0, 0.71);
+}
+.campaign-thumbnail .images img {
+    width: 45%;
+}
+.campaign-thumbnail .images img:first-child {
+    margin-right: 7%;
+}
+.campaign-thumbnail .images {
+    margin-top: 40px;
+}
+
+.campaign-thumbnail-empty {
+    background: url("../images/pie-chart-3-64x64.png") no-repeat center;
+    height: 280px;
+    display: none;
 }

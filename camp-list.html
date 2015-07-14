@@ -13,15 +13,22 @@
     <div class="container-fluid">
         <div class="row">
             <ul class="nav nav-pills">
-                <li role="presentation" class="pull-left logo">Logo</li>
-                <li role="presentation" class="pull-left"><button class="btn"><a href="">Campaigns</a></button></li>
-                <li role="presentation" class="pull-left"><button class="btn"><a href="">Agents</a></button></li>
-                <li role="presentation" class="pull-right"><button class="btn"><a href="">Help</a></button></li>
+                <li role="presentation" class="pull-left"><img class="logo" src="images/pie-chart-3-64x64.png"
+                                                               alt="pie's business"/></li>
+                <li role="presentation" class="pull-left">
+                    <button class="btn"><a href="">Campaigns</a></button>
+                </li>
+                <li role="presentation" class="pull-left">
+                    <button class="btn"><a href="">Agents</a></button>
+                </li>
+                <li role="presentation" class="pull-right">
+                    <button class="btn"><a href="">Help</a></button>
+                </li>
                 <li role="presentation" class="dropdown pull-right">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                        aria-expanded="false">
                         <button class="btn">
-                             <span class="dd-span">Name    </span><span class="caret"></span>
+                            <span class="dd-span">Ben    </span><span class="caret"></span>
                         </button>
                     </a>
                     <ul class="dropdown-menu">
@@ -32,14 +39,60 @@
                         <li><a href="">Log Out</a></li>
                     </ul>
                 </li>
-                <li role="presentation" class="pull-right">foto</li>
+                <li role="presentation" class="pull-right"><img src="images/avatar.png" alt="avatar"/></li>
             </ul>
         </div>
     </div>
 </nav>
 <div class="container">
-    <div class="row">
+    <h2 class="text-left campaign-page-title">Campaigns</h2>
 
+    <div class="row">
+        <div class="col-sm-2 campaign-create-button">
+            <a class="thumbnail-link" href="">Create Campaign</a>
+            <i class="glyphicon glyphicon-plus"></i>
+            <div>Create Campaign</div>
+        </div>
+        <div class="col-sm-4 col-sm-offset-1 campaign-thumbnail">
+            <a class="thumbnail-link" href="">Click to edit</a>
+
+            <div class="title">
+                <div class="logo"></div>
+                Dinner for 6+ people
+            </div>
+            <div class="special">
+                <span class="glyphicon glyphicon-heart"></span> Complimentary bottle of wine
+            </div>
+            <div class="reward">
+                <span class="glyphicon glyphicon-usd"></span> 10% of the final bill
+            </div>
+            <div class="images">
+                <img src="images/food-picture-1.png" alt=""/>
+                <img src="images/food-picture-2.png" alt=""/>
+            </div>
+
+        </div>
+        <div class="col-sm-4 col-sm-offset-1 campaign-thumbnail">
+            <a class="thumbnail-link" href="">Click to edit</a>
+
+            <div class="title">
+                <div class="logo"></div>
+                Happy Birthday Party
+            </div>
+            <div class="special">
+                <span class="glyphicon glyphicon-heart"></span> 10% Discount
+            </div>
+            <div class="reward">
+                <span class="glyphicon glyphicon-usd"></span> 10% of the final bill
+            </div>
+            <div class="images">
+                <img src="images/food-picture-1.png" alt=""/>
+                <img src="images/food-picture-2.png" alt=""/>
+            </div>
+        </div>
+        <div class="col-sm-4 campaign-thumbnail campaign-thumbnail-empty">
+
+        </div>
     </div>
 </div>
 </body>
