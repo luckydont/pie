@@ -491,3 +491,18 @@ ul.nav li.dropdown span.dd-span {
 #leads .request .finish button i {
     font-size: 2em;
 }
+
+/**************** ACTIVE CAMPAIGNS *********************/
+.active-campaigns-list {
+    margin-top: 40px;
+}
+.active-campaigns-list .campaign-thumbnail .place {
+    font-size: .9em;
+    font-style: oblique;
+}
+.active-campaigns-list .campaign-thumbnail .place-name {
+    font-size: 1.4em;
+}
+.active-campaigns-list .campaign-thumbnail {
+    height: 350px;
+}
