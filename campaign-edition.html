@@ -52,6 +52,7 @@
             <a href="#leads" aria-controls="leads" role="tab" data-toggle="tab">Leads</a></li>
     </ul>
     <div class="tab-content">
+        <!-- ************ CE-FORM ***********-->
         <div role="tabpanel" class="tab-pane active" id="campaign-info">
             <form action="" class="form-inline">
                 <div class="col-sm-12 editor-container">
@@ -128,16 +129,69 @@
                 </div>
                 <div class="col-sm-2 finish">
                     <button class="btn">
-                       <i class="glyphicon glyphicon-ok"></i>
+                        <i class="glyphicon glyphicon-ok"></i>
                     </button>
                 </div>
             </form>
         </div>
+        <!-- ************ LEADS ***********-->
         <div role="tabpanel" class="tab-pane" id="leads">
-            
+            <div class="col-sm-12 title">Dinner for 6+ people @Marco's on Cavill</div>
+            <div class="col-sm-5">
+                <div class="subtitle">Agents with active leads</div>
+                <ul class="list-unstyled users">
+                    <li class="active"><i class="glyphicon glyphicon-user"></i> Lorem ipsum.</li>
+                    <li><i class="glyphicon glyphicon-user"></i> Lorem ipsum dolor.</li>
+                    <li><i class="glyphicon glyphicon-user"></i> Lorem ipsum.</li>
+                    <li><i class="glyphicon glyphicon-user"></i> Lorem ipsum dolor.</li>
+                </ul>
+            </div>
+            <div class="col-sm-7 details">
+                <div class="info-block">
+                    <span>Name:</span><span>Glenn</span><br>
+                    <span>Phone#:</span><span>932467093</span><br>
+                    <span>Info:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio enim incidunt molestias nihil quidem rem, repellat? Corporis, et, id!</span><br>
+                </div>
+                <button class="btn pull-right close-lead-btn btn-danger" data-toggle="popover">
+                    Close Lead
+                </button>
+                <div class="input-group col-sm-12 text-right request">
+                    <label for="leads-request-field">Request more info</label><br>
+                    <textarea name="leads-request-field" id="leads-request-field" cols="40" rows="3" placeholder="Can I contact them ask to book a table?"></textarea><br>
+                    <div class="finish">
+                        <button class="btn">
+                            <i class="glyphicon glyphicon-ok"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 </body>
+<div hidden class="popover-html">
+    <button class="btn btn-success">
+        <span>
+             Success!
+        </span><br>
+        <span>
+            reward the agent
+        </span>
+    </button>
+    <button class="btn btn-danger">
+        Cancelled
+    </button>
+</div>
 <script src="js/campaign-edition.js"></script>
+<script>
+    $(document).ready(function() {
+        $(function () {
+            $('[data-toggle="popover"]').popover({
+                title: '',
+                html: true,
+                content: $('.popover-html').html()
+            });
+        })
+    })
+</script>
 </html>

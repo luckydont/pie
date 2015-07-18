@@ -1,6 +1,11 @@
 * {
     font-size: 14px;
 }
+/*input:focus {
+    box-shadow: inset 1px 1px 1px 1px #3DBFD9;
+    background: transparent;
+    border: 1px solid #7b7b7b;
+}*/
 
 /***************** MAIN-PAGE ************************/
 
@@ -396,4 +401,93 @@ ul.nav li.dropdown span.dd-span {
 
 #campaign-info form .upload-info {
     font-size: 1.4em;
+}
+
+#leads .title {
+    font-size: 2em;
+    color: #3DBFD9;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#leads .subtitle {
+    font-size: 1.2em;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#leads ul.users li {
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 6px 15px;
+}
+#leads ul.users li:hover {
+    background: rgba(61, 191, 217, 0.40);
+}
+#leads ul.users li.active {
+    background: rgba(61, 191, 217, 0.40);
+}
+
+#leads .details {
+    padding: 20px;
+}
+#leads .details .info-block {
+    background: rgba(61, 191, 217, 0.31);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#leads .details .info-block span:nth-of-type(odd) {
+    margin-right: 10px;
+}
+#leads .details .close-lead-btn {
+    margin-top: 20px;
+}
+#leads .popover-content .btn-success span:last-of-type {
+    font-size: 0.8em;
+    font-style: oblique;
+}
+#leads .popover-content .btn {
+    width: 110px;
+    height: 55px;
+}
+#leads .popover .arrow {
+    top: 50% !important;
+}
+#leads .popover {
+    top: 110px !important;
+}
+#leads .request {
+    margin-top: 75px;
+}
+#leads .request label {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+#leads .request textarea {
+    border-radius: 20px;
+    border: 1px solid #3DBFD9;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#leads .request .finish button {
+    text-align: center;
+    margin-top: 20px;
+    color: #3DBFD9;
+    background: transparent;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    height: 55px;
+    width: 160px;
+}
+
+#leads .request .finish:hover button  {
+    background: #3DBFD9;
+    color: white;
+}
+#leads .request .finish button i {
+    font-size: 2em;
 }
