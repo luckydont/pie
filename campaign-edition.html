@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default campaign-page-nav col-sm-12">
+    <div class="container-fluid">
+        <div class="row">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="pull-left"><img class="logo" src="images/pie-chart-3-64x64.png"
+                                                               alt="pie's business"/></li>
+                <li role="presentation" class="pull-left">
+                    <button class="btn"><a href="">Campaigns</a></button>
+                </li>
+                <li role="presentation" class="pull-left">
+                    <button class="btn"><a href="">Agents</a></button>
+                </li>
+                <li role="presentation" class="pull-right">
+                    <button class="btn"><a href="">Help</a></button>
+                </li>
+                <li role="presentation" class="dropdown pull-right">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        <button class="btn">
+                            <span class="dd-span">Ben    </span><span class="caret"></span>
+                        </button>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Profile</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Switch to Agent</a></li>
+                        <li><a href="">Log Out</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="pull-right"><img src="images/avatar.png" alt="avatar"/></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active pull-left">
+            <a href="#campaign-info" aria-controls="campaign-info" role="tab" data-toggle="tab">Campaign Info</a></li>
+        <li role="presentation" class="pull-right">
+            <a href="#leads" aria-controls="leads" role="tab" data-toggle="tab">Leads</a></li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="campaign-info">
+            <form action="" class="form-inline">
+                <div class="col-sm-12 editor-container">
+
+                    <div class="col-sm-12 ce-description">
+                        <label for="ce-short-description">Short description of your campaign (visible in the search)</label>
+                        <input id="ce-short-description" name="description" type="text"/>
+
+                        <div class="tip-field">Dinner for six with complimentary bottle of wine</div>
+
+                        <label for="ce-full-description">Full description(Only Visible for chosen agents)</label>
+                        <textarea name="" id="ce-full-description" cols="30" rows="4"></textarea>
+
+                        <div class="tip-field">Tip: How special is this offer</div>
+                    </div>
+
+                </div>
+                <div class="col-sm-5 editor-container reward-block">
+                    <span class="title">Agent's reward</span>
+
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Please select
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a class="changeTypeOfReward" type="slice" href="#">Slice %</a></li>
+                            <li><a class="changeTypeOfReward" type="fixed" href="#">Fixed</a></li>
+                        </ul>
+                        <div class="reward-input input-group">
+                            <input type="text"/>
+
+                            <div class="currency">%</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-offset-1 col-sm-6 editor-container reward-block">
+                    <span class="title">Bonus for new Client</span>
+
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Please select
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a class="changeTypeOfReward" type="slice" href="#">Discount %</a>
+                            </li>
+                            <li><a class="changeTypeOfReward" type="bonus" href="#">Bonus</a></li>
+                        </ul>
+                        <div class="reward-input input-group">
+                            <input type="text"/>
+
+                            <div class="currency">%</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 checkbox-wrapper">
+                    <div class="input-group">
+                        <div class="checkbox-div">
+                            <input class="checkbox" type="checkbox">
+                        </div>
+                        <span>Make this Campaign visible to public</span><br>
+                        <span>(allows anyone to apply to be an Agent)</span>
+                    </div>
+                </div>
+                <div class="col-sm-2 upload-info">
+                    Add pictures related to this offer
+                </div>
+                <div class="col-sm-2">
+                    Upload
+                </div>
+                <div class="col-sm-6 ce-images">
+                    <img src="images/food-picture-1.png" alt=""/>
+                    <img src="images/food-picture-2.png" alt=""/>
+                    <img src="images/food-picture-1.png" alt=""/>
+                </div>
+                <div class="col-sm-2 finish">
+                    <button class="btn">
+                       <i class="glyphicon glyphicon-ok"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="leads">
+            
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/campaign-edition.js"></script>
+</html>

@@ -191,32 +191,33 @@ ul.nav li.dropdown span.dd-span {
 .campaign-create-button:hover {
 }
 .campaign-create-button:hover div {
-    height: 97%;
-    padding-top: 36%;
+    height: 98%;
+    padding-top: 40%;
+    font-size: 2em;
 }
 
 .campaign-create-button div {
     position: absolute;
     background: #333;
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1.6em;
     bottom: 3px;
-    width: 97%;
+    width: 98%;
     color: #fff;
     padding: 5px;
     text-align: center;
     height: 40px;
-    -webkit-transition: all .5s ease-out;
-    -moz-transition:    all .5s ease-out;
-    -ms-transition:     all .5s ease-out;
-    -o-transition:      all .5s ease-out;
-    transition:         all .5s ease-out;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition:    all .4s ease-out;
+    -ms-transition:     all .4s ease-out;
+    -o-transition:      all .4s ease-out;
+    transition:         all .4s ease-out;
 
 }
 .campaign-create-button i.glyphicon {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 90px;
-    font-size: 2em;
+    font-size: 3em;
     color: #47D454;
 }
 .campaign-thumbnail {
@@ -243,7 +244,7 @@ ul.nav li.dropdown span.dd-span {
     text-decoration: none;
     font-size: 2em;
     text-align: center;
-    padding-top: 30%;
+    padding-top: 40%;
 }
 
 .campaign-thumbnail > a.thumbnail-link:hover {
@@ -283,4 +284,116 @@ ul.nav li.dropdown span.dd-span {
     background: url("../images/pie-chart-3-64x64.png") no-repeat center;
     height: 280px;
     display: none;
+}
+.campaign-thumbnail, .campaign-create-button {
+    height: 300px;
+}
+
+/*******************CAMPAIGN-EDITOR************************/
+.editor-container  form, .editor-container  form * {
+    width: 100%;
+}
+.caret {
+    width: auto;
+}
+.ce-description label{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.ce-description .tip-field {
+    font-size: 0.9em;
+    font-style: oblique;
+    margin-top: 5px;
+}
+.ce-description input, .ce-description textarea {
+    width: 100%;
+}
+.reward-block {
+    margin-top: 15px;
+    padding: 30px;
+}
+.reward-block .title {
+    margin: 30px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.reward-block .reward-input {
+    position: relative;
+    height: 34px;
+}
+.reward-block > .input-group-btn {
+    padding-top: 20px;
+}
+.reward-block .reward-input input {
+    z-index: 2;
+    background: transparent;
+    position: relative;
+    height: 34px;
+    margin-left: 20px;
+    border: 1px solid #3DBFD9;
+    line-height: normal;
+    font-size: 1.7em;
+    width: 33%;
+    padding: 0 15px;
+}
+.reward-block .reward-input .currency {
+    position: absolute;
+    right: 65%;
+    text-align: right;
+    width: auto;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    font-size: 1.7em;
+    margin-left: 20px;
+    color: #928A8A;
+}
+#campaign-info form .checkbox-wrapper {
+    margin: 15px 0;
+    padding: 30px;
+}
+#campaign-info form .checkbox-wrapper span:first-of-type {
+    font-weight: 600;
+    font-size: 1.8em;
+}
+#campaign-info form .checkbox-wrapper span:last-of-type {
+    font-size: 0.9em;
+    font-style: oblique;
+}
+#campaign-info form .checkbox-wrapper .checkbox-div {
+    display: table-cell;
+    padding: 0 15px;
+}
+
+#campaign-info form .ce-images img {
+    height: 60px;
+    margin: 0 20px;
+}
+#campaign-info form .finish button {
+    height: 80px;
+    width: 70%;
+    text-align: center;
+}
+#campaign-info form .finish button {
+    color: #3DBFD9;
+    background: transparent;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    height: 100%;
+    width: 100%;
+}
+
+#campaign-info form .finish:hover button  {
+    background: #3DBFD9;
+    color: white;
+}
+#campaign-info form .finish button i {
+    font-size: 2em;
+}
+
+#campaign-info form .upload-info {
+    font-size: 1.4em;
 }
