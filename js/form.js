@@ -9,23 +9,23 @@ var submit        = document.querySelector("#login-button");
 
 
 switchElement.onclick = function() {
-          if (statusValue == "sign-up") {
+    if (statusValue == "sign-up") {
 
-              formQuestion.textContent   = "Already have an account? ";
-              switchElement.textContent  = "Log In";
-              submit.textContent         = "Create Account";
+        formQuestion.textContent   = "Already have an account? ";
+        switchElement.textContent  = "Log In";
+        submit.textContent         = "Create Account";
 
-              document.querySelector("#phase-status").setAttribute("name", "log-in");
-              statusValue                = 'log-in';
+        document.querySelector("#phase-status").setAttribute("name", "log-in");
+        statusValue                = 'log-in';
 
-          } else if (statusValue == "log-in") {
-              formQuestion.textContent   = "Don't have an account? ";
-              switchElement.textContent  = "Sign Up";
-              submit.textContent         = "Login";
+    } else if (statusValue == "log-in") {
+        formQuestion.textContent   = "Don't have an account? ";
+        switchElement.textContent  = "Sign Up";
+        submit.textContent         = "Login";
 
-              document.querySelector("#phase-status").setAttribute("name", "sign-up");
-              statusValue                = 'sign-up';
-          }
+        document.querySelector("#phase-status").setAttribute("name", "sign-up");
+        statusValue                = 'sign-up';
+    }
 };
 
 
