@@ -229,7 +229,7 @@ ul.nav li.dropdown span.dd-span {
     font-weight: 600;
     box-shadow: 0 0 27px -7px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 .campaign-thumbnail > div {
     margin: 12px 5px;
@@ -505,4 +505,7 @@ ul.nav li.dropdown span.dd-span {
 }
 .active-campaigns-list .campaign-thumbnail {
     height: 350px;
+}
+.active-campaigns-list .campaign-thumbnail a {
+    padding-top: 50%;
 }
