@@ -3,8 +3,224 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-default campaign-page-nav col-sm-12">
+    <div class="container-fluid">
+        <div class="row">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="pull-left"><img class="logo" src="images/pie-chart-3-64x64.png"
+                                                               alt="pie's business"/></li>
+                <li role="presentation" class="pull-left">
+                    <button class="btn"><a href="">Campaigns</a></button>
+                </li>
+                <li role="presentation" class="pull-left">
+                    <button class="btn"><a href="">Messaging</a></button>
+                </li>
+                <li role="presentation" class="dropdown pull-right">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        <button class="btn">
+                            <span class="dd-span">Ben    </span><span class="caret"></span>
+                        </button>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Profile</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Switch to Agent</a></li>
+                        <li><a href="">Log Out</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="pull-right"><img src="images/avatar.png" alt="avatar"/></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container" id="search-page">
+    <div class="col-sm-6 search-page-subnav">
+        <div class="form-group has-feedback">
+            <label class="control-label sr-only" for="campaign-nav-search">campaigns search</label>
 
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-search"></span>
+                <input type="text" class="form-control" id="campaign-nav-search" aria-describedby="campaign-nav-search">
+
+                <div class="dropdown input-group-btn">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="all-cat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        All Categories
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="all-cat">
+                        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                        <li><a href="#">Lorem ipsum dolor.</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-5 search-page-subnav">
+        <div class="form-group has-feedback">
+            <label class="control-label sr-only" for="campaign-nav-search">location search</label>
+
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-map-marker"></span>
+                <label for="campaign-nav-location-search" class="sr-only">location</label>
+                <input type="text" class="form-control" id="campaign-nav-location-search" aria-describedby="campaign-nav-search">
+
+                <div class="dropdown input-group-btn">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="location" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        + 0 km
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="location">
+                        <li><a href="#">0 km</a></li>
+                        <li><a href="#">2 km</a></li>
+                        <li><a href="#">5 km</a></li>
+                        <li><a href="#">>10km </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1">
+        <button class="btn btn-lg btn-success">
+            <i class="glyphicon glyphicon-search"></i>
+        </button>
+    </div>
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="sort-btn">
+                    <span class="pull-left ">Sort by:</span>
+
+                    <div class="pull-left dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="search-page-sort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Most Recent
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="sort-page-sort">
+                            <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                            <li><a href="#">Lorem ipsum dolor.</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="result-title pull-right">Results found: 2</div>
+            </div>
+            <div class="row">
+                <div class="active-campaigns-list">
+                    <!-- col-sm-4 вместо col-sm-3 -->
+                    <div class="col-sm-4 col-sm-offset-2 campaign-thumbnail">
+                        <a class="thumbnail-link" href="">Click to edit</a>
+
+                        <div class="place">Restaurant</div>
+                        <div class="place-name">Marco's on Cavill</div>
+                        <div class="title">
+                            <div class="logo"></div>
+                            Dinner for 6+ people
+                        </div>
+                        <div class="special">
+                            <span class="glyphicon glyphicon-heart"></span>Complimentary bottle of wine
+                        </div>
+                        <div class="reward">
+                            <span class="glyphicon glyphicon-usd"></span>10% of the final bill
+                        </div>
+                        <div class="images">
+                            <img src="images/food-picture-1.png" alt=""/>
+                            <img src="images/food-picture-2.png" alt=""/>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-1 campaign-thumbnail">
+                        <a class="thumbnail-link" href="">Click to edit</a>
+
+                        <div class="place">Restaurant</div>
+                        <div class="place-name">Marco's on Cavill</div>
+                        <div class="title">
+                            <div class="logo"></div>
+                            Happy Birthday Party
+                        </div>
+                        <div class="special">
+                            <span class="glyphicon glyphicon-heart"></span>10% Discount
+                        </div>
+                        <div class="reward">
+                            <span class="glyphicon glyphicon-usd"></span>10% of the final bill
+                        </div>
+                        <div class="images">
+                            <img src="images/food-picture-1.png" alt=""/>
+                            <img src="images/food-picture-2.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-3 filters">
+            <div class="title">
+                Refine search
+            </div>
+            <div class="panel-group" role="tablist">
+                <div class="panel panel-default">
+
+                    <div class="panel-heading" role="tab" id="heading-cat-1">
+                        <h4 class="panel-title">
+                            <a type="button" class="collapsed btn" role="button" data-toggle="collapse" href="#cat-1" aria-expanded="false" aria-controls="cat-1">
+                                Collapsible list group
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="cat-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-cat-1">
+                        <ul class="list-group">
+                            <li class="list-group-item">Bootply</li>
+                            <li class="list-group-item sublist">
+                                <div class="panel-group" role="tablist">
+                                    <div class="panel panel-default">
+
+                                        <div class="panel-heading" role="tab" id="sub-heading-cat-1">
+                                            <h4 class="panel-title">
+                                                <a type="button" class="collapsed btn" role="button" data-toggle="collapse" href="#sub-cat-1" aria-expanded="false" aria-controls="sub-cat-1">
+                                                    Collapsible sublist group
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="sub-cat-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sub-heading-cat-1">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Bootply</li>
+                                                <li class="list-group-item">One itmus ac facilin</li>
+                                                <li class="list-group-item">Second eros</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">Second eros</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group reward">
+                    <label for="reward-amount-range-from" class="sr-only">Minimal amount of reward</label>
+                    <input id="reward-amount-range-from" type="text" placeholder="From"/>
+                    <label for="reward-amount-range-to" class="sr-only">Maximal amount of reward</label>
+                    <input id="reward-amount-range-to" type="text" placeholder="To"/>
+                    <button class="btn btn-success pull-right">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

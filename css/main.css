@@ -509,3 +509,57 @@ ul.nav li.dropdown span.dd-span {
 .active-campaigns-list .campaign-thumbnail a {
     padding-top: 50%;
 }
+
+/***************** SEARCH PAGE *****************/
+
+.search-page-subnav {
+
+}
+.search-page-subnav > .form-group {
+    width: 100%;
+}
+.search-page-subnav > .form-group .input-group {
+    width: 100%;
+}
+.search-page-subnav > .form-group .input-group .glyphicon {
+    top: 0;
+    cursor: default;
+}
+#search-page .filters {
+
+}
+#search-page .sort-btn > span {
+    margin: 5px 10px 0 0;
+}
+#search-page .result-title {
+    font-weight: 600;
+    font-size: 1.6em;
+    padding-right: 20px;
+}
+#search-page .filters .title {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+#search-page .filters .panel-heading {
+    padding: 0;
+}
+#search-page .filters .panel-heading a.btn {
+    width: 100%;
+    text-align: center;
+}
+#search-page .filters .sublist {
+    padding: 0;
+}
+#search-page .filters .sublist .panel-group {
+    margin-bottom: 0;
+}
+#search-page .filters .reward {
+    padding: 10px;
+}
+#search-page .filters .reward input {
+    border-radius: 10px;
+    width: 40%;
+    padding: 5px;
+    border: 1px solid #bcbcbc;
+}
