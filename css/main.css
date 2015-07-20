@@ -563,3 +563,49 @@ ul.nav li.dropdown span.dd-span {
     padding: 5px;
     border: 1px solid #bcbcbc;
 }
+/********************* CAMPAIGN-DETAILS ****************/
+#campaign-detailed .title {
+    font-size: 1.5em;
+}
+#campaign-detailed .pictures img {
+    height: 50px;
+}
+#campaign-detailed p {
+    font-size: 1.4em;
+    margin: 20px 0;
+}
+#campaign-detailed .details-left-column > div, #campaign-detailed .details-right-column > div {
+    width: 50%;
+    float: left;
+    font-size: 1.3em;
+}
+#campaign-detailed .tracking-title {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+#campaign-detailed .tracking-method {
+    position: relative;
+    padding-left: 45px;
+    margin-top: 20px;
+}
+#campaign-detailed .tracking-method > *{
+    float: left;
+}
+#campaign-detailed .tracking-method span {
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 1.6em;
+}
+#campaign-detailed .results-title {
+    font-size: 1.5em;
+    margin: 30px 0;
+    text-align: center;
+}
+#campaign-detailed .results-rewarded {
+    font-size: 1.5em;
+    text-align: center;
+}
+
